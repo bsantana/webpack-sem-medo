@@ -1,3 +1,5 @@
 import cow from './cow'
+import './css/main.css'
 
-document.querySelector('#box').innerText = cow.say('Webpack is great!')
+const message = 'is great'
+document.querySelector('#box').innerText = cow.say(`Webpack with Babel ${message}!`)
